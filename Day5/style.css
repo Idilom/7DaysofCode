@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #333; /* Cor de texto principal */
+  --cor-secundaria: #666; /* Cor de texto secundário */
+  --cor-fundo: #f8f8f8; /* Cor de fundo */
+  --cor-borda: #b8b8b8; /* Cor de borda */
+  font-size: 16px;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.caixa {
+  width: 100%;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  color: var(--cor-primaria);
+  background-image: url(./img/supermarket-goods-pattern.jpg);
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-fundo);
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.categorias {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+
+.categoria {
+  padding: 10px;
+  background: rgb(173, 173, 173);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-bottom: 1rem;
+}
+
+.categoria:hover {
+  background: rgb(107, 105, 105);
+  color: white;
+}
+
+.listas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.lista-container {
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  list-style-type: disc;
+}
+
+li {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.small-text {
+  font-size: 0.875rem;
+}
+
+.bloco {
+  display: flex;
+  padding: 50px;
+  justify-content: space-evenly;
+  gap: 40px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bloco1 {
+  display: flex;
+  width: 600px;
+  height: 80vh;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  min-width: 50vh;
+}
+
+.bloco2 {
+  position: relative;
+  width: 600px;
+  height: 80vh;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  overflow-y: auto;
+  min-width: 50vh;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.save {
+  display: flex;
+  justify-content: flex-end;
+}
+.savea {
+  position: absolute;
+  bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+
+  transform: translateX(-0%);
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.menu-button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.menu-option {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  text-align: left;
+  background-color: white;
+  cursor: pointer;
+}
+
+.menu-option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsável por mostrar o menu quando o botão for clicado */
+.show {
+  display: block;
+}
+
+.pdf-mode h3 {
+  font-size: 14px;
+}
+
+.pdf-mode li {
+  padding: 3px;
+  font-size: 12px;
+}
+
+.pdf-mode .lista-container {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+button,
+.menu-option {
+  font-size: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 3px solid var(--cor-borda);
+  font-size: 1rem;
+}

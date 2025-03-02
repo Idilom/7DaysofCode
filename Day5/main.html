@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7daysofcode Day 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bloco">
+        <div class="bloco1">
+            <!-- Lado esquerdo -->
+            <div class="input-section">
+                <h1>Lista de Compras</h1>
+                <p>Escreva o item que deseja e clique na categoria que este item pertence, o item será enviado para a
+                    lista</p>
+                <input class="caixa" type="text" id="itemInput" placeholder="Digite um item">
+                <p>Escolha uma categoria:</p>
+                <div class="categorias" id="categorias"></div>
+            </div>
+        </div>
+        <!-- Lado direito -->
+        <div class="bloco2">
+            <h2>Lista de compras</h2>
+            <div class="menu">
+                <button class="menu-button" onclick="toggleMenu()">&#8230;</button>
+                <!-- Menu suspenso -->
+                <div class="menu-content">
+                    <button class="menu-option" onclick="compartilhar()">Compartilhar</button>
+                    <button class="menu-option" onclick="salvarTxt()">Salvar em TXT</button>
+                    <button class="menu-option" onclick="salvarPdf()">Salvar em PDF</button>
+                </div>
+            </div>
+            <div class="listas" id="listas"></div>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <ul class="lista" id="listaDeCompras"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
